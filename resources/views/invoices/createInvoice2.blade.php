@@ -616,6 +616,7 @@
                                                                 class="form-control form-control-sm single-select">
                                                                 @foreach ($taxTypes as $type)
                                                                     @if ($type->parent === 'T4')
+                                                                        <option value="W010">أتعاب مهنية</option>
                                                                         <option value="{{ $type->code }}"
                                                                             style="font-size: 15px;width: 100px;">
                                                                             {{ $type->name_ar }}
@@ -891,6 +892,7 @@
 
                                             @foreach ($taxTypes as $type)
                                                 @if ($type->parent === 'T4')
+                                                <option value="W010">أتعاب مهنية</option>
                                                     <option value="{{ $type->code }}" style="font-size: 15px;width: 100px;">
                                                         {{ $type->name_ar }}
                                                     </option>
