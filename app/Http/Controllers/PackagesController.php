@@ -129,7 +129,7 @@ class PackagesController extends Controller
         $download = Http::withHeaders([
             "Authorization" => 'Bearer ' . $response['access_token'],
             "Content-type" => "application/octet-stream",
-        ])->get("https://api.invoicing.eta.gov.eg/api/v1/documentPackages/$id");
+        ])->get("https://api.invoicing.eta.gov.eg/api/v1.0/documentPackages/$id");
 
         return response($download)->header('Content-Type', 'application/zip');
 

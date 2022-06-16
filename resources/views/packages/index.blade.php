@@ -46,7 +46,7 @@
                                     <th>@lang("site.Date To")</th>
                                     <th>@lang("site.Status")</th>
                                     <th>@lang("site.Format / Type")</th>
-                                    <th@lang("site.Package Status")></th>
+                                    <th>@lang("site.Package Status")</th>
                                     <th>@lang("site.DownloaD Package")</th>
                                 </tr>
                             </thead>
@@ -85,10 +85,11 @@
                                         @endif
                                         @if ($package['status'] == 2)
                                             <td>
-                                                <form action="{{ route('downloadPackage', $package['packageId']) }}"
+                                                {{-- <form action="{{ route('downloadPackage', $package['packageId']) }}"
                                                     method="get">
                                                     <button type="submit" class="btn btn-success">تحميل</button>
-                                                </form>
+                                                </form> --}}
+                                                <a class="btn btn-success" href="{{ route('downloadPackage', $package['packageId']) }}">تحميل</a>
                                             </td>
                                         @else
                                             <td>غير متاح</td>
