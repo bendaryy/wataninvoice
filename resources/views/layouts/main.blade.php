@@ -55,11 +55,11 @@
                 <div>
                     @if (LaravelLocalization::getCurrentLocale() == 'en')
                         <a href="{{ url('/') }}">
-                            <h4 class="logo-text">الدولية تريدنج نبيل عبد الحليم جوهر وشركاه</h4>
+                            <h4 class="logo-text">مكتب احمد فؤاد الوطن امين</h4>
                         </a>
                     @else
                         <a href="{{ url('/') }}">
-                            <h4 class="logo-text">الدولية تريدنج نبيل عبد الحليم جوهر وشركاه</h4>
+                            <h4 class="logo-text">مكتب احمد فؤاد الوطن امين</h4>
                         </a>
                     @endif
 
@@ -124,11 +124,11 @@
                                 <i class="bx bx-right-arrow-alt"></i>@lang('site.received_documents')</a>
                         </li>
                         <li> <a href="{{ route('createInvoice') }}">
-                                <i class="bx bx-right-arrow-alt"></i>اضافة وثيقة بالجنيه</a>
+                                <i class="bx bx-right-arrow-alt"></i>اضافة وثيقة جديدة</a>
                         </li>
-                        <li> <a href="{{ route('createInvoiceDollar') }}">
+                        {{-- <li> <a href="{{ route('createInvoiceDollar') }}">
                                 <i class="bx bx-right-arrow-alt"></i>اضافة وثيقة بالدولار</a>
-                        </li>
+                        </li> --}}
                     </ul>
                 </li>
 
@@ -214,7 +214,7 @@
 
                 {{-- العملاء --}}
 
-                <li>
+                {{-- <li>
                     <a href="javascript:;">
                         <div class="parent-icon"><i class="fadeIn animated bx bx-user"></i>
                         </div>
@@ -229,7 +229,7 @@
                                     class="bx bx-right-arrow-alt"></i>@lang('site.create-customer')</a></li>
 
                     </ul>
-                </li>
+                </li> --}}
 
 
                 {{-- الإعدادات --}}
@@ -360,7 +360,7 @@
                 class='bx bxs-up-arrow-alt'></i></a>
         <!--End Back To Top Button-->
         <footer class="page-footer">
-            <p class="mb-0">Copyright © 2021. Developed By <a href="" target=".blank">الدولية تريدنج نبيل عبد الحليم جوهر وشركاه
+            <p class="mb-0">Copyright © 2021. Developed By <a href="" target=".blank">مكتب احمد فؤاد الوطن امين
                     </a></p>
         </footer>
     </div>
